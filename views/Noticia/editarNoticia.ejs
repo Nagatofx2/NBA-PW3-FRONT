@@ -1,0 +1,39 @@
+<%- include('../partials/header.ejs')  %>
+
+<title> EDIÇÃO DE NOTÍCIAS - LIBRI</title>
+
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <%- include('../partials/menu.ejs') %>
+
+        <div class="card mt-2">
+            <div class="card-header">EDIÇÃO DE NOTÍCIAS</div>
+        </div>
+
+        <div class="card-body">
+            <form action="http://localhost:3001/alterarNotícia" method="post">
+                
+                <label for="">Notícia</label>
+
+                <input
+                    type="hidden"
+                    name="id" id="id"
+                    value="<%= noticia.id %>"/>
+
+                <input type="text" class="form-control" 
+                        name="nome_noticia" id="nome_noticia"
+                        placeholder="DIGITE UMA NOTÍCIA"
+                        value="<%= noticia.nome_noticia %>">
+                
+                <button class="btn btn-success mt-2">EDITAR</button>
+            </form>
+        </div>
+    </div>
+
+    </body>
+
+<%- include('../partials/footer.ejs')  %>

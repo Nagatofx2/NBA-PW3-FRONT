@@ -1,0 +1,24 @@
+{
+  "name": "NBANoticias",
+  "version": "1.0.0",
+  "description": "Front-end site de noticias da NBA",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "pw3",
+    "front-end",
+    "NBA",
+    "nodejs",
+    "etec",
+    "barueri"
+  ],
+  "author": "Marcelo dos Santos da Boa Morte",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
